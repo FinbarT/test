@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 27 01:32:25 GMT 2016</td>
+</tr>
+<tr><td>Total time:</td><td>55 seconds (55162 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='UI.CheckIssuesUI.CheckIssuesUI_01()'><b>CheckIssuesUI_01</b><br>Test class: UI.CheckIssuesUI<br>Test method: Issue entitled: 'issue 3' exists<br/>
+<a href="#Output-241193138" onClick='toggleBox("Output-241193138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-241193138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-241193138">
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'issue 3')] : .//a[contains(text(), 'issue 3')]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>UI.CheckIssuesUI@13459d2c</td></tr>
+<tr>
+<td title='UI.CheckIssuesUI.CheckIssuesUI_02()'><b>CheckIssuesUI_02</b><br>Test class: UI.CheckIssuesUI<br>Test method: Issue entitled: 'issue 2' exists<br/>
+<a href="#Output-1003309120" onClick='toggleBox("Output-1003309120", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1003309120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1003309120">
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'issue 2')] : .//a[contains(text(), 'issue 2')]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>UI.CheckIssuesUI@13459d2c</td></tr>
+<tr>
+<td title='UI.ModifyIssueUI.ModifyIssueUI_01()'><b>ModifyIssueUI_01</b><br>Test class: UI.ModifyIssueUI<br>Test method: Edit Comments Body<br/>
+<a href="#Output-187598510" onClick='toggleBox("Output-187598510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-187598510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-187598510">
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'issue 2')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='issue-128990371']/div[1]/div[1]/a | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue-128990371-body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue-128990371-body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Update comment')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='issue-128990371']/div[2]/div/div/p | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>UI.ModifyIssueUI@ee7c921</td></tr>
+<tr>
+<td title='UI.CreateIssueUI.createIssueUI_01()'><b>createIssueUI_01</b><br>Test class: UI.CreateIssueUI<br>Test method: Check the preview matches what it should<br/>
+<a href="#Output-1969699380" onClick='toggleBox("Output-1969699380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1969699380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1969699380">
+Found WebElement: Dynamically Generated From: issue_title | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue_body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'Preview')] | Selector Type: XPATH | Timeout: 60<br/>
+Found 1 objects matching Element Selector: Dynamically Generated From: .//p[contains(text(), 'This is a comment on the issue')] : .//p[contains(text(), 'This is a comment on the issue')]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>UI.CreateIssueUI@224d834f</td></tr>
+<tr>
+<td title='UI.CreateIssueUI.createIssueUI_02()'><b>createIssueUI_02</b><br>Test class: UI.CreateIssueUI<br>Test method: Submit and verify<br/>
+<a href="#Output-1713955449" onClick='toggleBox("Output-1713955449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1713955449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1713955449">
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Submit new issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'New Issue Title0.27755509036678583')] : .//a[contains(text(), 'New Issue Title0.27755509036678583')]<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>UI.CreateIssueUI@224d834f</td></tr>
+<tr>
+<td title='UI.OpenCloseIssueUI.openCloseIssueUI_01()'><b>openCloseIssueUI_01</b><br>Test class: UI.OpenCloseIssueUI<br>Test method: close issue<br/>
+<a href="#Output-95690170" onClick='toggleBox("Output-95690170", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-95690170" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-95690170">
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'issue 3')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Close issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='partial-discussion-header']/div[3]/div[1]/div | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>UI.OpenCloseIssueUI@5a0b65e0</td></tr>
+<tr>
+<td title='UI.OpenCloseIssueUI.openCloseIssueUI_02()'><b>openCloseIssueUI_02</b><br>Test class: UI.OpenCloseIssueUI<br>Test method: re-open issue<br/>
+<a href="#Output-2031280246" onClick='toggleBox("Output-2031280246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2031280246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2031280246">
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Reopen issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='partial-discussion-header']/div[3]/div[1]/div | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>UI.OpenCloseIssueUI@5a0b65e0</td></tr>
+</table><p>
+</body>
+</html>

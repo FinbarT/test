@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo -n "Enter your your preferred browser ("firefox", "chrome") and press [ENTER]: "
+read browser
+
+echo -n "Enter your git username and press [ENTER]: "
+read name
+
+echo -n "Enter your git password and press [ENTER]: "
+read -s pword
+
+USERNAME="$name" PASSWORD="$pword" BROWSER="$browser" URL="http://www.github.com" mvn -f ../ -Dtest="UI.*" install
+wait
+
+#uncomment for linux
+#xdg-open ../target/surefire-reports/index.html
+
+#uncomment for mac
+open ../target/surefire-reports/index.html

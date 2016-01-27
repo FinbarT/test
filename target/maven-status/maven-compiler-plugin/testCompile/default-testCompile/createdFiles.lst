@@ -1,0 +1,10 @@
+API/CreateIssueAPI.class
+UI/CreateIssueUI.class
+API/ModifyIssueAPI.class
+API/BaseTestAPI.class
+UI/BaseTestUI.class
+UI/OpenCloseIssueUI.class
+UI/ModifyIssueUI.class
+API/CheckIssuesAPI.class
+UI/CheckIssuesUI.class
+API/OpenCloseIssueAPI.class

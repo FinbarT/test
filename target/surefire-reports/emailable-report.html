@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">55.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">UI.CheckIssuesUI<td><a href="#m1"><b>CheckIssuesUI_01</b>  ("Issue entitled: 'issue 3' exists")</a></td><td class="numi">1</td><td>1453858353109</td><td class="numi">49</td></tr><tr class="passedodd"><td><a href="#m2"><b>CheckIssuesUI_02</b>  ("Issue entitled: 'issue 2' exists")</a></td><td class="numi">1</td><td>1453858353159</td><td class="numi">62</td></tr>
+<tr class="passedeven"><td rowspan="2">UI.CreateIssueUI<td><a href="#m3"><b>createIssueUI_01</b>  ("Check the preview matches what it should")</a></td><td class="numi">1</td><td>1453858360746</td><td class="numi">924</td></tr><tr class="passedeven"><td><a href="#m4"><b>createIssueUI_02</b>  ("Submit and verify")</a></td><td class="numi">1</td><td>1453858361671</td><td class="numi">4521</td></tr>
+<tr class="passedodd"><td rowspan="1">UI.ModifyIssueUI<td><a href="#m5"><b>ModifyIssueUI_01</b>  ("Edit Comments Body")</a></td><td class="numi">1</td><td>1453858373920</td><td class="numi">6104</td></tr>
+<tr class="passedeven"><td rowspan="2">UI.OpenCloseIssueUI<td><a href="#m6"><b>openCloseIssueUI_01</b>  ("close issue")</a></td><td class="numi">1</td><td>1453858388026</td><td class="numi">5697</td></tr><tr class="passedeven"><td><a href="#m7"><b>openCloseIssueUI_02</b>  ("re-open issue")</a></td><td class="numi">1</td><td>1453858393724</td><td class="numi">5222</td></tr>
+</table>
+<h1>Surefire test</h1>
+<a id="m1"></a><h2>UI.CreateIssueUI:createIssueUI_01</h2>
+<div style="padding-left:3em">
+Found WebElement: Dynamically Generated From: issue_title | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue_body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'Preview')] | Selector Type: XPATH | Timeout: 60<br/>
+Found 1 objects matching Element Selector: Dynamically Generated From: .//p[contains(text(), 'This is a comment on the issue')] : .//p[contains(text(), 'This is a comment on the issue')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>UI.OpenCloseIssueUI:openCloseIssueUI_02</h2>
+<div style="padding-left:3em">
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Reopen issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='partial-discussion-header']/div[3]/div[1]/div | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>UI.CheckIssuesUI:CheckIssuesUI_02</h2>
+<div style="padding-left:3em">
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'issue 2')] : .//a[contains(text(), 'issue 2')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>UI.CheckIssuesUI:CheckIssuesUI_01</h2>
+<div style="padding-left:3em">
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'issue 3')] : .//a[contains(text(), 'issue 3')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>UI.CreateIssueUI:createIssueUI_02</h2>
+<div style="padding-left:3em">
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Submit new issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found 1 objects matching Element Selector: Dynamically Generated From: .//a[contains(text(), 'New Issue Title0.27755509036678583')] : .//a[contains(text(), 'New Issue Title0.27755509036678583')]<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>UI.OpenCloseIssueUI:openCloseIssueUI_01</h2>
+<div style="padding-left:3em">
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'issue 3')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Close issue')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='partial-discussion-header']/div[3]/div[1]/div | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>UI.ModifyIssueUI:ModifyIssueUI_01</h2>
+<div style="padding-left:3em">
+Found WebElement: Dynamically Generated From: .//a[contains(text(), 'issue 2')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='issue-128990371']/div[1]/div[1]/a | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue-128990371-body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: issue-128990371-body | Selector Type: ID | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//button[contains(text(), 'Update comment')] | Selector Type: XPATH | Timeout: 60<br/>
+Found WebElement: Dynamically Generated From: .//*[@id='issue-128990371']/div[2]/div/div/p | Selector Type: XPATH | Timeout: 60<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo -n "Enter your git username and press [ENTER]: "
+read name
+
+echo -n "Enter your git password and press [ENTER]: "
+read -s pword
+
+USERNAME="$name" PASSWORD="$pword" BROWSER="none" URL="http://www.github.com" mvn -f ../ -Dtest="API.*" install
+wait
+
+#uncomment for linux
+#xdg-open ../target/surefire-reports/index.html
+
+#uncomment for mac
+open ../target/surefire-reports/index.html
